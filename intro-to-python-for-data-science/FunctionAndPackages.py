@@ -26,12 +26,12 @@ second = [10.75, 9.50]
 full = first + second
 
 # Sort full in descending order: full_sorted
-full_sorted = sorted(full, reverse = True)
+full_sorted = sorted(full, reverse=True)
 
 # Print out full_sorted
 print(full_sorted)
 
-# Exercise 3
+# Exercise 4
 # string to experiment with: place
 place = "poolhouse"
 
@@ -44,7 +44,7 @@ print(place, place_up)
 # Print out the number of o's in place
 print(place.count('o'))
 
-# Exercise 4
+# Exercise 5
 # Create list areas
 areas = [11.25, 18.0, 20.0, 10.75, 9.50]
 
@@ -54,7 +54,7 @@ print(areas.index(20))
 # Print out how often 9.50 appears in areas
 print(areas.count(9.50))
 
-# Exercise 5
+# Exercise 6
 # Create list areas
 areas = [11.25, 18.0, 20.0, 10.75, 9.50]
 
@@ -71,6 +71,46 @@ areas.reverse()
 # Print out areas
 print(areas)
 
-# Exercise 5
-import numpy
+# Video example
+import numpy as np
+
+np.array([1, 2, 3])
+
+# Exercise 7
+# Definition of radius
+r = 0.43
+
+# Import the math package
+import math
+
+# Calculate C
+C = 2 * math.pi * r
+
+# Calculate A
+A = math.pi * r ** 2
+
+# Build printout
+print("Circumference: " + str(C))
+print("Area: " + str(A))
+
+# Exercise 8
+# Definition of radius
+r = 192500
+
+# Import radians function of math package
+from math import radians
+
+# Travel distance of Moon over 12 degrees. Store in dist.
+dist = r * radians(12)
+
+# Print out dist
+print(dist)
+
+# Exercise 8
+# Import function with specific name
+from scipy.linalg import inv as my_inv
+
+# create array
+my_inv([[1,2], [3,4]])
+
 
