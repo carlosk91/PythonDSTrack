@@ -51,14 +51,14 @@ plt.show()
 
 # Exercise 4
 # Build histogram with 5 bins
-plt.hist(life_exp, bins = 5)
+plt.hist(life_exp, bins=5)
 
 # Show and clean up plot
 plt.show()
 plt.clf()
 
 # Build histogram with 20 bins
-plt.hist(life_exp, bins = 20)
+plt.hist(life_exp, bins=20)
 
 # Show and clean up again
 plt.show()
@@ -66,18 +66,18 @@ plt.clf()
 
 # Exercise 5
 # Histogram of life_exp, 15 bins
-plt.hist(life_exp, bins = 15)
+plt.hist(life_exp, bins=15)
 
 # Show and clear plot
 plt.show()
-plt.clf() # plt.clf() is to clear the previous figure
+plt.clf()  # plt.clf() is to clear the previous figure
 
 # Histogram of life_exp1950, 15 bins
-plt.hist(life_exp1950, bins = 15)
+plt.hist(life_exp1950, bins=15)
 
 # Show and clear plot again
 plt.show()
-plt.clf() # plt.clf() is to clear the previous figure
+plt.clf()  # plt.clf() is to clear the previous figure
 
 # Exercise 5
 # Basic scatter plot, log scale
@@ -130,42 +130,42 @@ np_pop = np.array(pop)
 np_pop = np_pop * 2
 
 # Update: set s argument to np_pop
-plt.scatter(gdp_cap, life_exp, s = np_pop)
+plt.scatter(gdp_cap, life_exp, s=np_pop)
 
 # Previous customizations
 plt.xscale('log')
 plt.xlabel('GDP per Capita [in USD]')
 plt.ylabel('Life Expectancy [in years]')
 plt.title('World Development in 2007')
-plt.xticks([1000, 10000, 100000],['1k', '10k', '100k'])
+plt.xticks([1000, 10000, 100000], ['1k', '10k', '100k'])
 
 # Display the plot
 plt.show()
 
 # Exercise 8
 # Specify c and alpha inside plt.scatter()
-plt.scatter(x = gdp_cap, y = life_exp, s = np.array(pop) * 2, c = col, alpha = 0.8)
+plt.scatter(x=gdp_cap, y=life_exp, s=np.array(pop) * 2, c=col, alpha=0.8)
 
 # Previous customizations
 plt.xscale('log')
 plt.xlabel('GDP per Capita [in USD]')
 plt.ylabel('Life Expectancy [in years]')
 plt.title('World Development in 2007')
-plt.xticks([1000,10000,100000], ['1k','10k','100k'])
+plt.xticks([1000, 10000, 100000], ['1k', '10k', '100k'])
 
 # Show the plot
 plt.show()
 
 # Exercise 9
 # Scatter plot
-plt.scatter(x = gdp_cap, y = life_exp, s = np.array(pop) * 2, c = col, alpha = 0.8)
+plt.scatter(x=gdp_cap, y=life_exp, s=np.array(pop) * 2, c=col, alpha=0.8)
 
 # Previous customizations
 plt.xscale('log')
 plt.xlabel('GDP per Capita [in USD]')
 plt.ylabel('Life Expectancy [in years]')
 plt.title('World Development in 2007')
-plt.xticks([1000,10000,100000], ['1k','10k','100k'])
+plt.xticks([1000, 10000, 100000], ['1k', '10k', '100k'])
 
 # Additional customizations
 plt.text(1550, 71, 'India')
@@ -176,4 +176,3 @@ plt.grid(True)
 
 # Show the plot
 plt.show()
-
