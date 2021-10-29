@@ -117,4 +117,3 @@ dow_bond = pd.merge_ordered(dji, bond_perc_close, on='date', how='inner', suffix
 # Plot only the close_dow and close_bond columns
 dow_bond.plot(y=['close_dow', 'close_bond'], x='date', rot=90)
 plt.show()
-
